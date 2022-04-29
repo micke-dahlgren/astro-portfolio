@@ -3,12 +3,7 @@
 import MainHead from '../components/MainHead.astro';
 import Button from '../components/Button/index.jsx';
 import Nav from '../components/Nav/index.jsx';
-import Footer from '../components/Footer/index.jsx';
-import PortfolioPreview from '../components/PortfolioPreview/index.jsx';
 
-// Data Fetching: List all Markdown posts in the repo.
-const projects = await Astro.glob('./project/**/*.md');
-const featuredProject = projects[0];
 const name = {
   first: 'Mikael',
   sur: 'Dahlgren',
@@ -16,8 +11,6 @@ const name = {
     return this.first + ' ' + this.sur;
   }
 }
-// Full Astro Component Syntax:
-// https://docs.astro.build/core-concepts/astro-components/
 ---
 
 <html lang="en">
@@ -38,7 +31,8 @@ const name = {
 						Frontend Development
 					</h3>
 					<p>
-						Lorem Ipsum
+						Professional experience since 2021, first line of javascript was written in early 2010's.
+						Code should be readable, sustainable and efficient.
 					</p>
 				</div>
 				<div class="section">
@@ -46,7 +40,7 @@ const name = {
 						UX / UI Design
 					</h3>
 					<p class="bio">
-						Lorem Ipsum
+						My prior experience as an UX designer have made communication with designers on the team effortless and fun.
 					</p>
 					<p>
 						<a href="/about">
